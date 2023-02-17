@@ -382,7 +382,32 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		target: "self",
 		type: "Fairy",
 	},
-
+	// Kolohe
+	hangten: {
+		accuracy: 100,
+		basePower: 75,
+		category: "Special",
+		name: "Hang Ten",
+		shortDesc: "User sets Electric Terrain on hit.",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		volatileStatus: 'protect',
+		onPrepareHit(pokemon) {
+			this.add('-anim', source, 'Stoked Sparksurfer', target);
+			this.add('-anim', source, 'Surf', target);
+		},
+		secondary: {
+			chance: 100,
+			self: {
+				onHit() {
+					this.field.setTerrain('electricterrain');
+				},
+			},
+		},
+		target: "normal",
+		type: "Water",
+	},
 	// Mad Monty
 	stormshelter: {
 		accuracy: true,

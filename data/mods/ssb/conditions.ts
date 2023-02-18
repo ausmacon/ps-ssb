@@ -233,6 +233,18 @@ export const Conditions: {[k: string]: ModdedConditionData & {innateName?: strin
 			this.add(`c:|${getName('Kris')}|ok`);
 		},
 	},
+	lumari: {
+		noCopy: true,
+		onStart() {
+			this.add(`c:|${getName('Lumari')}|pending`);
+		},
+		onSwitchOut() {
+			this.add(`c:|${getName('Lumari')}|pending`);
+		},
+		onFaint() {
+			this.add(`c:|${getName('Lumari')}|pending`);
+		},
+	},
 	madmonty: {
 		noCopy: true,
 		onStart() {

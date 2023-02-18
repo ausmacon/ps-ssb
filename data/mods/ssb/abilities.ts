@@ -328,7 +328,18 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 			}
 		},
 	},
-
+	
+	// Lumari
+	pyrotechnic: {
+		onModifyCritRatio(critRatio, source, target) {
+			if (target && ['brn'].includes(target.status)) return 5;
+		},
+		shortDesc: "Critical hits are guaranteed when foe is burned.",
+		name: "Pyrotechnic",
+		rating: 1.5,
+		num: 196,
+	},
+	
 	// Mia
 	hacking: {
 		name: "Hacking",

@@ -102,6 +102,12 @@ export const ssbSets: SSBSets = {
 		signatureMove: 'ok',
 		evs: {hp: 252, def: 4, spa: 252}, nature: 'Quiet', teraType: 'Normal',
 	},
+	Lumari: {
+		species: 'Ponyta-Galar', ability: 'Pyrotechnic', item: 'Eviolite', gender: 'F',
+		moves: ['Substitute', ['Sappy Seed', 'Sizzly Slide'], 'Magical Torque']
+		signatureMove: 'Mystical Bonfire',
+		evs: {atk: 252, def: 4, spe: 252}, nature: 'Jolly', teraType: 'Fairy',
+	},
 	phoopes: {
 		species: 'Jynx', ability: 'I Did It Again', item: 'Red Card', gender: 'F',
 		moves: ['Lovely Kiss', 'Psychic', 'Toxic'],

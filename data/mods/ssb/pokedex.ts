@@ -49,7 +49,13 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 110, atk: 200, def: 99, spa: 101, spd: 99, spe: 35},
 		abilities: {0: "Cacophony"},
 	},
-
+	
+	// Lumari
+	ponytagalar: {
+		inherit: true,
+		abilities: {0: "Pyrotechnic"},
+	},
+	
 	// Mia
 	mewtwomegax: {
 		inherit: true,
